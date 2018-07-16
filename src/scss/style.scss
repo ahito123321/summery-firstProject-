@@ -1,0 +1,71 @@
+@import 'fonts';
+@import 'vars';
+@import 'default';
+@import 'scrollbar';
+
+@import 'homes';
+
+@import './components/menu';
+@import './components/slider';
+
+body{
+    background-color: rgb(203, 255, 216);
+}
+/*.app{
+    
+}*/
+
+.content-app-wrap{
+    display: inline-block;
+    float: right;
+    background-color: rgb(222, 222, 222);
+}
+
+.download-button{
+    padding: 15px 35px;
+    display: block;
+    border: none;
+    border-bottom: 4px solid white;
+    background-color: $color-green;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    span{
+        &:first-child{
+            font-size: 16pt;
+            font-weight: bold;
+            text-align: center;
+        }
+        &:last-child{
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 0px;
+            width: 100%;
+            transition: 0.15s height ease;
+            background-color: white;
+            overflow: hidden;
+        }
+    }
+    &:hover{
+        span{
+            &:first-child{
+                opacity: 0;
+            }
+            &:last-child{
+                height: 100%;
+                color: $color-blue;
+                font-size: 16pt;
+                font-weight: bold;
+            }
+        }
+    }
+    &:active{
+        border: none;
+        border-bottom: 4px solid $color-blue;
+    }
+}
