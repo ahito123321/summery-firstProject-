@@ -3,8 +3,6 @@
 @import 'default';
 @import 'scrollbar';
 
-@import 'homes';
-
 //content 1
 @import './components/menu';
 @import './components/slider';
@@ -15,9 +13,12 @@
 @import './components/skills';
 //content 4
 @import './components/education';
-
+//content 5
+@import './components/portfolio';
 //content 6
 @import './components/interests';
+//content 7
+@import './components/contact-us';
 
 body{
     background-color: rgb(203, 255, 216);
