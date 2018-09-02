@@ -3,6 +3,7 @@
 @import 'default';
 @import 'scrollbar';
 
+
 //content 1
 @import './components/menu';
 @import './components/slider';
@@ -20,17 +21,24 @@
 //content 7
 @import './components/contact-us';
 
+@import 'media';
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 body{
-    background-color: rgb(203, 255, 216);
+    background-color: rgb(36, 62, 78);
 }
 /*.app{
     
 }*/
 
 .content-app-wrap{
-    display: inline-block;
+    transition: all 1s ease;
     float: right;
-    width: calc(100vw - 330px);
+    width: 75%;
     background-color: rgb(222, 222, 222);
 }
 
@@ -44,6 +52,7 @@ body{
     cursor: pointer;
     user-select: none;
     position: relative;
+    outline: none;
     span{
         &:first-child{
             font-size: 16pt;

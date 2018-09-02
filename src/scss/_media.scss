@@ -1,0 +1,95 @@
+@media screen and (max-width: 1250px) {
+    #section-4-education{
+        .section-4-record{
+            .section-4-description-left{
+                &:hover{
+                    transform: none;
+                }
+            }
+            .section-4-description-right{
+                &:hover{
+                    transform: none;
+                }
+            }
+        } 
+    }
+}
+@media screen and (max-width: 1000px){
+    #section-2-wrap-about-me{
+        .section-2-contaier-about-me{
+            flex-direction: column;
+            .section-2-photo{
+                padding: 0px;
+            }
+            .section-2-text{
+                width: 100%;
+                margin: 10px;
+                p{
+                    margin: 10px auto 0px;
+                }
+                h1, h3, p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #section-3-skills{
+        .skills-container{
+            flex-direction: column;
+            transition: all 1s ease;
+            .additional-skills-container{
+                width: 95%;
+                margin-bottom: 50px
+            }
+            .professional-skills-container{
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .app{
+        .menu-app-wrap{
+            flex-direction: row;
+            width: 100%;
+            position: fixed;
+            height: auto;
+            top: 0px;
+            z-index: 4;
+        }
+        .content-app-wrap{
+            margin-top: 100px; 
+            width: 100%;
+            float: none;
+        }
+    }
+    #section-7-contact-us-container{
+        h1, h3{
+            text-align: center;
+        }
+        h3{
+            margin: 0px;
+        }
+        .content-container{
+            flex-direction: column-reverse;
+            margin: 0 auto;
+            .content-container-contact-address{
+                width: 100%;
+
+            }
+            .content-container-form-send{
+                width: 100%;
+                button{
+                    margin: 0px auto 20px;
+                }
+                .form-send-input{
+                    width: 100%;
+                }
+                .form-send-textarea{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
