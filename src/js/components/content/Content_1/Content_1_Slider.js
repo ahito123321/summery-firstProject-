@@ -7,7 +7,7 @@ class Content_1_Slider extends React.Component{
         return(
             <section id="section-1-wrap-slider">
                 <Slider
-                    imageSrc={["dist/img/slider/img_1.jpg", "dist/img/slider/img_2.jpg", "dist/img/slider/img_3.jpeg"]}
+                    imageSrc={["./img/slider/img_1.jpg", "./img/slider/img_2.jpg", "./img/slider/img_3.jpeg"]}
                     currentImage={ 0 }
                     timeChange={ 5000 }
                     timeHide={ 700 }

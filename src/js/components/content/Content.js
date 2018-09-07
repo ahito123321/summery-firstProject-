@@ -37,22 +37,22 @@ class Content extends React.Component{
                 <hr className="between-section-content" />
                 <Content_6_Interests int={
                     [
-                        [ "TRAVEL", "dist/img/interests/travel.png" ],
-                        [ 'GAMING', "dist/img/interests/gaming.png" ],
-                        [ 'MUSIC', "dist/img/interests/music.png" ],
-                        [ 'GUITAR', "dist/img/interests/guitar.png" ],
-                        [ 'MOVIES', "dist/img/interests/movies.png" ]
+                        [ "TRAVEL", "./img/interests/travel.png" ],
+                        [ 'GAMING', "./img/interests/gaming.png" ],
+                        [ 'MUSIC', "./img/interests/music.png" ],
+                        [ 'GUITAR', "./img/interests/guitar.png" ],
+                        [ 'MOVIES', "./img/interests/movies.png" ]
                     ]
                 }/>
                 <hr className="between-section-content" />
                 <Content_7_ContactUs cont={
                     [
-                        ["dist/img/contact/location.png", "0", "Chausy, 1 lane Frunze, Dom 2"],
-                        ["dist/img/contact/phone.png", "0", "+375 25 753 31 15, +375 29 864 55 96"],
-                        ["dist/img/contact/skype.png", "0", "login: ahito1233211"],
-                        ["dist/img/contact/email.png", "0", "ahito.123321@gmail.com"],
-                        ["dist/img/contact/website.png", "0", "coming soon"],
-                        ["dist/img/contact/vk.png", "https://vk.com/punk_n", "https://vk.com/punk_n"]
+                        ["./img/contact/location.png", "0", "Chausy, 1 lane Frunze, Dom 2"],
+                        ["./img/contact/phone.png", "0", "+375 25 753 31 15, +375 29 864 55 96"],
+                        ["./img/contact/skype.png", "0", "login: ahito1233211"],
+                        ["./img/contact/email.png", "0", "ahito.123321@gmail.com"],
+                        ["./img/contact/website.png", "0", "coming soon"],
+                        ["./img/contact/vk.png", "https://vk.com/punk_n", "https://vk.com/punk_n"]
                     ]
                 }/>
             </div>
