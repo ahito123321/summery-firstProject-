@@ -1,0 +1,78 @@
+#section-1-wrap-slider{
+    height: 100vh;
+    background-color: $color-white;
+    position: relative;
+    .home1-headers-wrap{
+        z-index: 2;
+        color: $color-white;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        h1{
+            color: $color-green;
+            font-weight: bold;
+        }
+    }
+    .home1-headers-download{
+        z-index: 2;
+        position: absolute;
+        left: 10%;
+        bottom: 20%;
+    }
+}
+
+.slider-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .slider-image-prev{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        background-size: cover;
+        z-index: 1;
+    }
+    .slider-image-current{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .slider-image-next{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        background-size: cover;
+        z-index: 1;
+    }
+    .slider-image-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(16, 16, 20, 0.5);
+        z-index: 2;
+    }
+    .slider-controls{
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 3;
+    }
+}
+.slider-control-btn{
+    width: 8px;
+    height: 8px;
+    border: 4px solid white;
+    border-radius: 12px;
+    background-color: $color-white;
+    margin: 5px;  
+    cursor: pointer;
+}
+.slider-control-btn-active{
+    background-color: $color-green; 
+}

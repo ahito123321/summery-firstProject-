@@ -1,0 +1,49 @@
+#section-2-wrap-about-me{
+    background-color: $color-white;
+    box-sizing: border-box;
+    padding: 10px;
+    h1{
+        color: $color-blue;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section-2-contaier-about-me{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .section-2-photo{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div{
+                width: 350px;
+                height: 400px;
+                background-color: $color-blue;
+                margin-bottom: 20px;
+            }
+        }
+        .section-2-text{
+            align-self: flex-start;
+            margin-top: 40px;
+            h1{
+                text-align: left;
+                margin: 0px;
+                color: $color-blue;
+                span{
+                    color: $color-green;
+                }
+            }
+            p{
+                max-width: 600px;
+                font-size: 1em;
+                font-weight: bold;
+                margin-top: 20px; 
+                &:last-child{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

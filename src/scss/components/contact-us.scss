@@ -1,0 +1,68 @@
+#section-7-contact-us-container{
+    background-color: $color-blue;
+    padding: 20px;
+    h1{
+        color: $color-white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h3{
+        color: $color-white;
+        margin-left: 10%
+    }
+    .content-container{
+        display: flex;      
+        .content-container-contact-address{
+            width: 50%;
+            .content-container-contact-address-data tr td{
+                color: $color-white;
+                padding: 10px;
+                a{
+                    color: $color-white;
+                    text-decoration: none;
+                    &:hover{
+                        color: $color-green;
+                    }
+                }
+                div{
+                    width: 32px;
+                    height: 32px;
+                    margin: 0px auto;
+                    background-size: 100% 100%;
+                }
+            }
+        }  
+        .content-container-form-send{
+            width: 50%;
+            .form-send-input{
+                width: 80%;
+                margin: 20px auto 0px; 
+                background-color: $color-blue;
+                border: none;
+                font-size: 1.3em;
+                color: $color-white;
+                border-bottom: 2px solid $color-white; 
+                outline: none;
+                padding: 5px;
+                &:focus{
+                    border-bottom: 2px solid $color-green;
+                }
+            }
+            .form-send-textarea{
+                margin: 20px auto;
+                padding: 5px;
+                font-size: 1.3em;
+                background-color: $color-blue;
+                border: none;
+                border-bottom: 2px solid $color-white;
+                color: $color-white;
+                width: 80%;
+                height: 150px;
+                outline: none;
+                &:focus{
+                    border-bottom: 2px solid $color-green;
+                }
+            }
+        }
+    }
+}
