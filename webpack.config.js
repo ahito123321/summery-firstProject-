@@ -35,10 +35,11 @@ module.exports = (env, options) => {
 
         //config webpack-dev-server
         devServer: {
+            compress: true,
             overlay: true
         },
 
-        devtool: (isDevelopment) ? 'eval-sourcemap' : '',
+        devtool: (isDevelopment) ? 'eval-sourcemap' : false,
 
         //modules
         module: {
@@ -61,12 +62,12 @@ module.exports = (env, options) => {
                     test: /\.(sc|c|sa)ss$/,
                     exclude: '/node_modules/',
                     use: [
-                        isDevelopment ? 'style-loader' : {
-                                                            loader: MiniCssExtractPlugin.loader,
-                                                            options: {
-                                                                publicPath: '../'
-                                                            }
-                                                        },
+                        {
+                            loader: MiniCssExtractPlugin.loader,
+                            options: {
+                                publicPath: '../'
+                            }
+                        },
                         {
                             loader: 'css-loader',
                             options: {
@@ -76,12 +77,7 @@ module.exports = (env, options) => {
                             }
                         },
                         'postcss-loader',
-                        {
-                            loader: "sass-loader", 
-                            options: {
-                                sourceMap: true
-                            }
-                        }    
+                        "sass-loader"
                     ]
                 },
                 //images
@@ -169,7 +165,7 @@ module.exports = (env, options) => {
             )
         );
         conf.plugins.push(
-            new CleanWebpackPlugin(['dist'])
+            new CleanWebpackPlugin(["dist"])
         );
         conf.plugins.push(
             new UglifyjsWebpackPlugin({

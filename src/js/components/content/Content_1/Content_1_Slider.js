@@ -12,10 +12,6 @@ class Content_1_Slider extends React.Component{
                     timeChange={ 5000 }
                     timeHide={ 700 }
                     textWrite={["FRONT-END DEVELOPER", "C# DEVELOPER", "BEGGINER UNITY DEVELOPER"]}/>
-                <div className="home1-headers-wrap">
-                    <h2>HELLO I'AM</h2>
-                    <h1>VLADIMIR LIASHINSKY</h1>
-                </div>
                 <button className="download-button home1-headers-download">
                     <span>DOWNLOAD MY CV</span>
                     <span>DOWNLOAD MY CV</span>

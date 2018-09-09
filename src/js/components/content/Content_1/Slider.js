@@ -101,7 +101,11 @@ class Slider extends React.Component{
                 <div className="slider-image-next" style={{
                     backgroundImage: 'url(' + this.imageSrc[this.nextIndex] + ')'
                 }}></div>
-                <Typed speed={this.timeChange - this.timeHide} index={this.state.currentImage} textWrite={this.props.textWrite}/>
+                <div className="home1-headers-wrap">
+                    <h2>HELLO I'AM</h2>
+                    <h1>VLADIMIR LIASHINSKY</h1>
+                    <Typed speed={this.timeChange - this.timeHide} index={this.state.currentImage} textWrite={this.props.textWrite}/>
+                </div>
                 <div className="slider-image-overlay"></div>
                 <div className="slider-controls">
                     {

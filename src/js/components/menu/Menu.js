@@ -20,6 +20,7 @@ class Menu extends React.Component{
                 <div className="menu_footer">
                     <h3>.....................</h3> 
                 </div>
+                <div className="menu_btn menu-btn-open-to-close"><span></span></div>
             </div>
         );
     }
