@@ -54,7 +54,6 @@ $(document).ready(function () {
         $(this).addClass("menu_item-active");
         var hash = $(this).attr("href");
         var target = $(hash);
-
         $("html, body").animate({
             scrollTop: target.offset().top
         }, 500, function(){

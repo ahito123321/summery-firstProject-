@@ -17,14 +17,14 @@ class Content extends React.Component{
                 <Content_2_AboutMe /> 
                 <hr className="between-section-content" />
                 <Content_3_Skills prof={[
-                    ["HTML5, CSS3 (SASS)", "80"],
-                    ["JavaScript (React)", "75"],
-                    ["C# (ASN.NET, WinnForms, WebForms)", "70"],
-                    ["SQL (SQL Server Express 2017)", "65"],
-                    ["UNITY 3d (2D Platformers)", "40"],
-                    ["GIT (BitBucket, GitHub)", "50"]
+                    ["HTML5, CSS3 (SASS)", "70"],
+                    ["JavaScript (React)", "65"],
+                    ["C# (ASP.NET, WinForms, WebForms)", "45"],
+                    ["SQL (SQL Server Express 2017)", "35"],
+                    ["UNITY 3d (2D Platformers)", "30"],
+                    ["GIT (BitBucket, GitHub)", "40"]
                 ]} add={[
-                    "English level - A2"
+                    "English level - A1+"
                 ]}/>
                 <hr className="between-section-content" />
                 <Content_4_Education educ={[

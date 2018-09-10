@@ -52,24 +52,25 @@
         .menu-app-wrap{
             width: 100%;
             position: fixed;
-            height: auto;
             top: 0px;
             z-index: 4;
             height: 48px;
             .menu-logo-wrap{
                 flex-direction: row;
                 justify-content: flex-start;
-                min-height: auto;
+                flex: 0;
+                height: 38px;
+                min-height: 38px;
                 .menu-logo{
                     width: 38px;
                     height: 38px;
                     background-size: contain;
-                    margin-bottom: 0px;
+                    margin-top: 5px; 
                     margin-left: 20px;
-                   
                 }
                 .menu-text-a{
                     margin-left: 15px;
+                    margin-bottom: 7px;
                 }   
             }
             .menu_items{
