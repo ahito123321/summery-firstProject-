@@ -67,7 +67,7 @@ class Menu extends React.Component{
                     <a className="menu_item" href="#section-7-contact-us-container">Contacts</a>
                 </div>          
                 <div className="menu_footer">
-                    <h3>.....................</h3> 
+                    <h3></h3> 
                 </div>
                 <div className="menu_btn menu-btn-open-to-close" onClick={this.buttonClickHendler.bind(this)}><span></span></div>
             </div>

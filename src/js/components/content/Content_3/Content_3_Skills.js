@@ -28,8 +28,10 @@ class Content_3_Skills extends React.Component{
         let addBlock = new Array();
 
         this.props.add.forEach((value, index) => {
+            let rnd = Math.random();
+            rnd = Math.round(rnd + 3);
             addBlock.push(
-                <div>
+                <div key={`${index + rnd}`}>
                     {value}
                 </div>
             );
@@ -45,9 +47,9 @@ class Content_3_Skills extends React.Component{
                                 ADDITIONAL SKILLS
                             </span>
                         </h2>
-                        <p>
+                        <div>
                             {addBlock}
-                        </p>
+                        </div>
                     </div>
                     <div className="professional-skills-container">
                         <h2>

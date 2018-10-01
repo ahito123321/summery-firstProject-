@@ -6,8 +6,9 @@ class Content_7_ContactUs extends React.Component{
     }
     render(){
         let line = new Array();
-        console.log(this.props.cont);
-        this.props.cont.forEach(value => {
+        let rnd = Math.random();
+            rnd = Math.round(rnd + 5);
+        this.props.cont.forEach((value, index) => {
             let temp = () => {
                 if (value[1] === "0")
                     return <p>{value[2]}</p>
@@ -15,7 +16,7 @@ class Content_7_ContactUs extends React.Component{
                     return <a href={value[1]}>{value[2]}</a>
             };
             line.push(
-                <tr>
+                <tr key={`${index + rnd}`}>
                     <td>
                         <div style={{
                             backgroundImage: `url(${value[0]})`
